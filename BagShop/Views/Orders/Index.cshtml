@@ -1,0 +1,48 @@
+﻿@using BagShop.Models.Models.Orders;
+@model List<OrderViewModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>All Orders</h2>
+
+<table class="table table-bordered table-hover text-center">
+    <thead>
+        <tr>
+            <th>
+                Order Id
+            </th>
+            <th>
+                Order Price
+            </th>
+            <th>
+                User Name
+            </th>
+            <th>
+                Actions
+            </th>   
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <th>
+                    @order.Id
+                </th>
+                <th>
+                    $@order.TotalPrice
+                </th>
+                <th>
+                    @order.UserName
+                </th>           
+                <th>
+                    <a class="btn btn-success" asp-controller="Orders" asp-action="Details" asp-route-orderId="@order.Id">Details</a>
+                </th>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a class="btn btn-primary" asp-controller="Home" asp-action="Index">Back</a>
+

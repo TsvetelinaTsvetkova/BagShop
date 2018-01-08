@@ -1,0 +1,23 @@
+﻿@using BagShop.Areas.Admin.Models.Identity
+@model UserWithRolesViewModel
+@{
+    ViewData["Title"] = "Roles";
+}
+
+<h2>Roles for user @Model.Email</h2>
+
+<div>
+    <a href="/admin/identity/addtorole/@Model.Id" class="btn btn-primary">Add To Role</a>
+</div>
+
+@if (!Model.Roles.Any())
+{
+    <h3>No roles for this user</h3>
+}
+<ul>
+    @foreach (var role in Model.Roles)
+    {
+        <li>@role</li>
+    }
+</ul>
+

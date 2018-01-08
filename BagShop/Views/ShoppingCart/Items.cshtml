@@ -1,0 +1,65 @@
+﻿@model  IEnumerable<CartItemViewModel>
+@{
+    ViewData["Title"] = "Items";
+}
+
+<h2>Shopping Cart Details</h2>
+@if (Model.Count() > 0)
+{
+    <table class="table table-bordered table-hover text-center">
+        <thead>
+            <tr>
+                <th>
+                    Title
+                </th>
+                <th>
+                    Single Price
+                </th>
+                <th>
+                    Quantity
+                </th>
+                <th>
+                    Price
+                </th>
+                <th>
+                    Actions
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var bag in Model)
+            {
+                <tr>
+                    <th>
+                        @bag.Title
+                    </th>
+                    <th>
+                        $@bag.Price
+                    </th>
+                    <th>
+                        @bag.Quantity
+                    </th>
+                    <th>
+                        $@bag.FullPrice
+                    </th>
+                    <th>
+                        <a class="btn btn-danger" asp-controller="ShoppingCart" asp-action="Remove" asp-route-id="@bag.BagId">Remove</a>
+                    </th>
+                </tr>
+            }
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>
+                    Total Price: $@Model.Sum(p => p.Price * p.Quantity)
+                </th>
+                <th>
+                    <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="FinishOrder">Finish Order</a>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+}
+
+<a class="btn btn-primary" asp-controller="Home" asp-action="Index">Back</a>

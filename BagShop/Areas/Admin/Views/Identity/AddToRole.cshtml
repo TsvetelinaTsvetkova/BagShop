@@ -1,0 +1,22 @@
+﻿@model IEnumerable<SelectListItem>
+@{
+    ViewData["Title"] = "AddToRole";
+}
+
+<h2>AddToRole</h2>
+@if (Model != null || Model.Count() != 0)
+{
+    <form method="post">
+        <select name="role" asp-items="Model" class="form-control">
+            @foreach (var role in Model)
+            {
+                <option value="@role.Value">@role.Text</option>
+            }
+        </select>
+        <button type="submit" class="btn btn-primary">Save Role</button>
+    </form>
+}
+else
+{
+    <a asp-area="Admin" asp-controller="Identity" asp-action="All" class="btn btn-primary text-left">Back</a>
+}

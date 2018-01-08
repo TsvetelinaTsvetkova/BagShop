@@ -1,0 +1,22 @@
+﻿@using BagShop.Models.Models.Home
+
+@model SearchViewModel
+
+@{
+    ViewData["Title"] = $"Search Results For {Model.SearchText}";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (Model.Bags.Any())
+{
+    <h3>Found bags</h3>
+
+    <div class="row course-listings">
+        @await Html.PartialAsync("_BagPartial", Model.Bags)
+    </div>
+}
+else
+{
+    <h3>No bags to show.</h3>
+}

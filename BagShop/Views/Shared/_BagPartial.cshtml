@@ -1,0 +1,34 @@
+﻿@using BagShop.Models.Models.Bags
+@model IEnumerable<BagListingServiceModel>
+<table class="table table-bordered table-hover listAllBags">
+    <thead>
+        <tr>
+            <th class="image">
+                Image
+            </th>
+            <th class="price">
+                Price
+            </th>
+            <th class="actions">
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var bag in Model)
+        {
+            <tr>
+                <th>
+                    <img src="@bag.ImageUrl" width="200" height="150" style="margin:0 auto" />
+                </th>
+                <th class="price">
+                    $@bag.Price
+                </th>
+                <th class="actions">
+                    <a class="btn btn-primary" asp-controller="Bags" asp-action="Details" asp-route-id="@bag.Id">Details</a>
+                    <a class="btn btn-success" asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-id="@bag.Id">Buy</a>
+                </th>
+            </tr>
+        }
+    </tbody>
+</table>

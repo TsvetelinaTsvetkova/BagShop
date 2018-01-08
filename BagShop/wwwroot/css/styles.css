@@ -1,0 +1,74 @@
+﻿.listAllBags {
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.search {
+    margin-top: 20px;
+    margin-left: 350px;
+    text-align: center;
+}
+
+.searchText {
+    width: 300px;
+}
+
+.allUsersTable {
+    margin-top: 20px;
+}
+
+.edit {
+    margin-top: 70px;
+}
+
+.delete {
+    margin-top: 70px;
+}
+
+.editButton {
+    float: right;
+}
+
+.detailsButton {
+    float: left;
+}
+
+.buyButton {
+    float: right;
+}
+
+.deleteButton {
+    float: right;
+}
+
+.backButton {
+    float: right;
+}
+
+.bagImage {
+    padding-bottom: 20px;
+}
+
+.bagDetails {
+    padding-top: 50px;
+}
+
+
+.image {
+    width: 200px;
+    text-align: center;
+}
+
+.price {
+    width: 200px;
+}
+
+.actions {
+    text-align: center;
+}
+
+.orderDetails {
+    padding-top: 20px;
+}

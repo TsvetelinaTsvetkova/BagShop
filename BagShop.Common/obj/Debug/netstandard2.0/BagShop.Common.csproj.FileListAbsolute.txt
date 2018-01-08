@@ -1,0 +1,11 @@
+C:\Users\Deni\source\repos\BagShop\BagShop.Common\bin\Debug\netstandard2.0\BagShop.Common.deps.json
+C:\Users\Deni\source\repos\BagShop\BagShop.Common\bin\Debug\netstandard2.0\BagShop.Common.dll
+C:\Users\Deni\source\repos\BagShop\BagShop.Common\bin\Debug\netstandard2.0\BagShop.Common.pdb
+C:\Users\Deni\source\repos\BagShop\BagShop.Common\bin\Debug\netstandard2.0\StackExchange.Redis.StrongName.dll
+C:\Users\Deni\source\repos\BagShop\BagShop.Common\bin\Debug\netstandard2.0\StackExchange.Redis.StrongName.xml
+C:\Users\Deni\source\repos\BagShop\BagShop.Common\obj\Debug\netstandard2.0\BagShop.Common.csprojResolveAssemblyReference.cache
+C:\Users\Deni\source\repos\BagShop\BagShop.Common\obj\Debug\netstandard2.0\BagShop.Common.csproj.CoreCompileInputs.cache
+C:\Users\Deni\source\repos\BagShop\BagShop.Common\obj\Debug\netstandard2.0\BagShop.Common.AssemblyInfoInputs.cache
+C:\Users\Deni\source\repos\BagShop\BagShop.Common\obj\Debug\netstandard2.0\BagShop.Common.AssemblyInfo.cs
+C:\Users\Deni\source\repos\BagShop\BagShop.Common\obj\Debug\netstandard2.0\BagShop.Common.dll
+C:\Users\Deni\source\repos\BagShop\BagShop.Common\obj\Debug\netstandard2.0\BagShop.Common.pdb

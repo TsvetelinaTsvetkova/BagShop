@@ -1,0 +1,36 @@
+﻿@using BagShop.Models.Models.Bags
+@model BagFullDetailsModel
+<div class="col-md-12">
+    <div class="col-md-6 bagImage">
+        <img src="@Model.ImageUrl" width="500" height="500" alt="@Model.ImageUrl" />
+    </div>
+    <div class="col-md-6 bagDetails">
+        <div class="col-md-12">
+            <label asp-for="@Model.Title" class="col-md-3"></label>
+            <div class="col-md-9">
+                @Model.Title
+            </div>
+        </div>
+        <div class="col-md-12">
+            <label asp-for="@Model.Description" class="col-md-3"></label>
+            <div class="col-md-9">
+                @Model.Description
+            </div>
+        </div>
+        <div class="col-md-12">
+            <label asp-for="@Model.Color" class="col-md-3"></label>
+            <div class="col-md-9">
+                @Model.Color
+            </div>
+        </div>
+        <div class="col-md-12">
+            <label asp-for="@Model.Price" class="col-md-3"></label>
+            <div class="col-md-9">
+                $@Model.Price
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-primary text-right backButton">Back</a>
+</div>

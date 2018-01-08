@@ -1,0 +1,13 @@
+C:\Users\Deni\source\repos\BagShop\BagShop.Models\bin\Debug\netstandard2.0\BagShop.Models.deps.json
+C:\Users\Deni\source\repos\BagShop\BagShop.Models\bin\Debug\netstandard2.0\BagShop.Models.dll
+C:\Users\Deni\source\repos\BagShop\BagShop.Models\bin\Debug\netstandard2.0\BagShop.Models.pdb
+C:\Users\Deni\source\repos\BagShop\BagShop.Models\obj\Debug\netstandard2.0\BagShop.Models.csprojResolveAssemblyReference.cache
+C:\Users\Deni\source\repos\BagShop\BagShop.Models\obj\Debug\netstandard2.0\BagShop.Models.csproj.CoreCompileInputs.cache
+C:\Users\Deni\source\repos\BagShop\BagShop.Models\obj\Debug\netstandard2.0\BagShop.Models.AssemblyInfoInputs.cache
+C:\Users\Deni\source\repos\BagShop\BagShop.Models\obj\Debug\netstandard2.0\BagShop.Models.AssemblyInfo.cs
+C:\Users\Deni\source\repos\BagShop\BagShop.Models\obj\Debug\netstandard2.0\BagShop.Models.dll
+C:\Users\Deni\source\repos\BagShop\BagShop.Models\obj\Debug\netstandard2.0\BagShop.Models.pdb
+C:\Users\Deni\source\repos\BagShop\BagShop.Models\bin\Debug\netstandard2.0\BagShop.Data.dll
+C:\Users\Deni\source\repos\BagShop\BagShop.Models\bin\Debug\netstandard2.0\BagShop.Data.pdb
+C:\Users\Deni\source\repos\BagShop\BagShop.Models\bin\Debug\netstandard2.0\BagShop.Common.dll
+C:\Users\Deni\source\repos\BagShop\BagShop.Models\bin\Debug\netstandard2.0\BagShop.Common.pdb

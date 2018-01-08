@@ -1,0 +1,63 @@
+﻿@using BagShop.Models.Models.Orders
+
+@model OrderDetailsViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+<h2 class="text-center">Details for order</h2>
+<div class="row">
+    <div class="form-group">
+        <label asp-for="@Model.OrderId" class="col-md-3"></label>
+        <div class="col-md-9">
+            <input readonly asp-for="@Model.OrderId" min="0" class="form-control" value="@(Model.OrderId)" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label asp-for="@Model.UserName" class="col-md-3"></label>
+        <div class="col-md-9">
+            <input readonly asp-for="@Model.UserName" min="0" class="form-control" value="@(Model.UserName)" />
+        </div>
+    </div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Price
+                </th>
+                <th>
+                    Quantitity
+                </th>
+                <th>
+                    Total Price
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.Products)
+            {
+                <tr>
+                    <th>
+                        @product.ProductName
+                    </th>
+                    <th>
+                        $@product.ProductPrice
+                    </th>
+                    <th>
+                        @product.Quantity
+                    </th>
+                    <th>
+                        $@product.FullPrice
+                    </th>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="text-right font-weight-bold">
+       <h4>Full Price $@Model.FullPrice</h4>
+    </div>
+    <a asp-controller="Orders" asp-action="Index" class="btn btn-primary text-left">Back</a>
+</div>

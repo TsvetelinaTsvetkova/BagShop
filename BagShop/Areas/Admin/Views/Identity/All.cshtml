@@ -1,0 +1,38 @@
+﻿@using BagShop.Areas.Admin.Models.Identity
+
+@model IEnumerable<ListUserViewModel>
+@{
+    ViewData["Title"] = "All Users";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <h2 class="text-success text-center">@TempData["SuccessMessage"]</h2>
+}
+
+<div class="row">
+    <table class="table table-bordered table-hover allUsersTable">
+        <tr>
+            <th>Username</th>
+            <th>E-mail</th>
+            <th>Actions</th>
+        </tr>
+        @foreach(var user in Model)
+        {
+            <tr>
+                <th>@user.Username</th>
+                <th>@user.Email</th>
+                <th>
+                    <a href="/admin/identity/changepassword/@user.Id" class="btn btn-warning">Change Password</a>
+                    <a href="/admin/identity/roles/@user.Id" class="btn btn-default">Roles</a>
+                </th>
+            </tr>
+        }
+    </table>
+</div>
+
+
+
+
